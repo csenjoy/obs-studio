@@ -40,7 +40,8 @@ ipch/
 GeneratedFiles/
 .moc/
 /UI/obs.rc
-.vscode/
+.vscode/*
+!.vscode/bookmarks.json
 /CI/include/*.lock.json
 install_temp/
 

@@ -1,0 +1,434 @@
+{
+	"files": [
+		{
+			"path": "av/obs-studio/UI/obs-app.cpp",
+			"bookmarks": [
+				{
+					"line": 1381,
+					"column": 15,
+					"label": "OBSApp::AppInit: Function Definition"
+				},
+				{
+					"line": 1448,
+					"column": 17,
+					"label": "StartupOBS: Function Definition"
+				},
+				{
+					"line": 1455,
+					"column": 12,
+					"label": "StartupOBS: .obs_startup(locale, path, store)"
+				},
+				{
+					"line": 1497,
+					"column": 18,
+					"label": "ui_task_handler: Function Definition"
+				},
+				{
+					"line": 1508,
+					"column": 18,
+					"label": "OBSApp::OBSInit: Function Definition"
+				},
+				{
+					"line": 1538,
+					"column": 1,
+					"label": "OBSApp::OBSInit: .StartupOBS(locale.c_str(), GetProfilerNameStore())"
+				},
+				{
+					"line": 1543,
+					"column": 18,
+					"label": "OBSApp::OBSInit: .obs_set_ui_task_handler(ui_task_handler)"
+				},
+				{
+					"line": 1572,
+					"column": 23,
+					"label": "OBSApp::OBSInit: .mainWindow = new OBSBasic::OBSBasic()"
+				},
+				{
+					"line": 1575,
+					"column": 1,
+					"label": "OBSApp::OBSInit: .connect(mainWindow, SIGNAL(destroyed()), this, SLOT(quit()))"
+				},
+				{
+					"line": 1577,
+					"column": 1,
+					"label": "OBSApp::OBSInit: .OBSBasic::OBSInit() called by mainWindow"
+				},
+				{
+					"line": 2139,
+					"column": 11,
+					"label": "run_program: Function Definition"
+				},
+				{
+					"line": 2196,
+					"column": 1,
+					"label": "run_program: .OBSApp::OBSApp() called by program(argc, argv, profilerNameStore.get())"
+				},
+				{
+					"line": 2207,
+					"column": 2,
+					"label": "run_program: .OBSApp::AppInit() called by program"
+				},
+				{
+					"line": 2211,
+					"column": 2,
+					"label": "run_program: .OBSApp::installTranslator(OBSTranslator translator) called by program"
+				},
+				{
+					"line": 2340,
+					"column": 6,
+					"label": "run_program: .OBSApp::OBSInit() called by program"
+				},
+				{
+					"line": 2345,
+					"column": 6,
+					"label": "run_program: .OBSApp::exec() called by program"
+				},
+				{
+					"line": 2876,
+					"column": 6,
+					"label": "main: Function Definition"
+				},
+				{
+					"line": 3055,
+					"column": 19,
+					"label": "main: .run_program(logFile, argc, arv) "
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/UI/window-basic-main.cpp",
+			"bookmarks": [
+				{
+					"line": 5726,
+					"column": 20,
+					"label": "OBSBasic::AddSource: Function Definition"
+				},
+				{
+					"line": 5729,
+					"column": 0,
+					"label": "OBSBasic::AddSource: OBSBasicSourceSelect sourceSelect(this, id, undo_s); sourceSelect.exec()"
+				},
+				{
+					"line": 5732,
+					"column": 0,
+					"label": "OBSBasic::AddSource: .CreatePropertiesWindow(sourceSelect.newSource)"
+				},
+				{
+					"line": 5737,
+					"column": 35,
+					"label": "OBSBasic::CreateAddSourcePopupMenu: Function Definition"
+				},
+				{
+					"line": 5823,
+					"column": 27,
+					"label": "OBSBasic::AddSourceFromAction: Function Definition"
+				},
+				{
+					"line": 5829,
+					"column": 6,
+					"label": "OBSBasic::AddSourceFromAction: 1.OBSBasic::AddSource(QT_TO_UTF8(action->data().toString()))"
+				},
+				{
+					"line": 5832,
+					"column": 25,
+					"label": "OBSBasic::AddSourcePopupMenu: Function Definition"
+				},
+				{
+					"line": 5842,
+					"column": 25,
+					"label": "OBSBasic::AddSourcePopupMenu: .QScopedPointer<QMenu> popup(CreateAddSourcePopupMenu())"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs.c",
+			"bookmarks": [
+				{
+					"line": 1770,
+					"column": 13,
+					"label": "obs_enum_sources: Function Definition"
+				},
+				{
+					"line": 1918,
+					"column": 27,
+					"label": "obs_get_source_by_name: Function Definition"
+				},
+				{
+					"line": 1920,
+					"column": 27,
+					"label": "obs_get_source_by_name: .get_context_by_name(&obs->data.first_source, name, &obs->data.source_mutex, obs_source_addref_safe_)"
+				},
+				{
+					"line": 2438,
+					"column": 40,
+					"label": "obs_context_data_init_wrap: Function Definition"
+				},
+				{
+					"line": 2468,
+					"column": 16,
+					"label": "obs_context_data_init: Function Definition"
+				},
+				{
+					"line": 2949,
+					"column": 11,
+					"label": "obs_queue_task: Function Definition"
+				},
+				{
+					"line": 3023,
+					"column": 24,
+					"label": "obs_set_ui_task_handler: Function Definition"
+				},
+				{
+					"line": 3026,
+					"column": 7,
+					"label": "obs_set_ui_task_handler: .obs_queue_task(OBS_TASK_UI, set_ui_thread, NULL, false)"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs.h",
+			"bookmarks": [
+				{
+					"line": 792,
+					"column": 13,
+					"label": "enum obs_obs_type: Enum Definition"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs-internal.h",
+			"bookmarks": [
+				{
+					"line": 441,
+					"column": 11,
+					"label": "struct obs_core: Struct Definition"
+				},
+				{
+					"line": 524,
+					"column": 19,
+					"label": "struct obs_context_data: Struct Definition"
+				},
+				{
+					"line": 647,
+					"column": 16,
+					"label": "struct obs_source: Struct Definition"
+				},
+				{
+					"line": 866,
+					"column": 26,
+					"label": "obs_source_dosignal: Function Definition"
+				},
+				{
+					"line": 876,
+					"column": 8,
+					"label": "obs_source_dosignal: .signal_handler_signal(obs->signals, signal_obs, &data)"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/util/profiler.c",
+			"bookmarks": [
+				{
+					"line": 834,
+					"column": 20,
+					"label": "struct profiler_name_store: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/UI/window-basic-source-select.cpp",
+			"bookmarks": [
+				{
+					"line": 23,
+					"column": 15,
+					"label": "struct AddSourceData: Struct Definition"
+				},
+				{
+					"line": 32,
+					"column": 31,
+					"label": "OBSBasicSourceSelect::EnumSources: Function Definition"
+				},
+				{
+					"line": 202,
+					"column": 7,
+					"label": "AddNew: Function Definition"
+				},
+				{
+					"line": 211,
+					"column": 25,
+					"label": "AddNew: .OBSSourceAutoRelease source = obs_get_source_by_name(name)"
+				},
+				{
+					"line": 218,
+					"column": 0,
+					"label": "AddNew: .OBSSourceAutoRelease source = obs_source_create(v_id, name, NULL, nullptr)"
+				},
+				{
+					"line": 226,
+					"column": 1,
+					"label": "AddNew: .obs_scene_atomic_update(scene, AddSouce, &data)"
+				},
+				{
+					"line": 246,
+					"column": 37,
+					"label": "OBSBasicSourceSelect::on_buttonBox_accepted: Function Definition"
+				},
+				{
+					"line": 309,
+					"column": 1,
+					"label": "OBSBasicSourceSelect::on_buttonBox_accepted: .AddNew(this, id, QT_TO_UTF8(ui->sourceName->text()), visible, newSource))"
+				},
+				{
+					"line": 383,
+					"column": 0,
+					"label": "OBSBasicSourceSelect::OBSBasicSourceSelect: Function Definition"
+				},
+				{
+					"line": 401,
+					"column": 0,
+					"label": "OBSBasicSourceSelect::OBSBasicSourceSelect: .source = obs_get_source_by_name(QT_TO_UTF8(text))"
+				},
+				{
+					"line": 436,
+					"column": 31,
+					"label": "OBSBasicSourceSelect::OBSBasicSourceSelect: .obs_enum_sources(&OBSBasicSourceSelect::EnumSources, this)"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs-source.h",
+			"bookmarks": [
+				{
+					"line": 217,
+					"column": 17,
+					"label": "struct obs_source_info: Struct Definition"
+				},
+				{
+					"line": 565,
+					"column": 19,
+					"label": "obs_register_source: Macro of obs_register_source_s"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs-source.c",
+			"bookmarks": [
+				{
+					"line": 52,
+					"column": 30,
+					"label": "get_source_info: Function Definition"
+				},
+				{
+					"line": 118,
+					"column": 14,
+					"label": "obs_source_init_context: Function Definition"
+				},
+				{
+					"line": 122,
+					"column": 16,
+					"label": "obs_source_init_context: .obs_context_data_init(&source->context, OBS_OBJ_TYPE_SOURCE, settings, name, hotkey_data, private)"
+				},
+				{
+					"line": 126,
+					"column": 16,
+					"label": "obs_source_init_context: .signal_handler_add_array(source->context.signals, source_signals)"
+				},
+				{
+					"line": 181,
+					"column": 22,
+					"label": "obs_source_init: Function Definition"
+				},
+				{
+					"line": 230,
+					"column": 27,
+					"label": "obs_source_init_finalize: Function Definition"
+				},
+				{
+					"line": 341,
+					"column": 19,
+					"label": "obs_source_create_internal: Function Definition"
+				},
+				{
+					"line": 347,
+					"column": 19,
+					"label": "obs_source_create_internal: .const struct obs_source_info *info = get_source_info(id)"
+				},
+				{
+					"line": 371,
+					"column": 12,
+					"label": "obs_source_create_internal: .obs_source_init_context(source, settins, name, hotkey_data, private)"
+				},
+				{
+					"line": 380,
+					"column": 1,
+					"label": "obs_source_create_internal: .info->get_defaults2(source->context.settings)"
+				},
+				{
+					"line": 385,
+					"column": 17,
+					"label": "obs_source_create_internal: .obs_source_init(source)"
+				},
+				{
+					"line": 389,
+					"column": 2,
+					"label": "obs_source_create_internal: .obs_source_init_audio_hotkeys(source)"
+				},
+				{
+					"line": 395,
+					"column": 0,
+					"label": "obs_source_create_internal: .source->context.data = info->create(source->context.settings, source)"
+				},
+				{
+					"line": 406,
+					"column": 0,
+					"label": "obs_source_create_internal: .obs_source_dosignal(source, \"source_create\", NLL)"
+				},
+				{
+					"line": 409,
+					"column": 0,
+					"label": "obs_source_create_internal: .obs_source_init_finalize(source)"
+				},
+				{
+					"line": 418,
+					"column": 24,
+					"label": "obs_source_create: Function Definition"
+				},
+				{
+					"line": 421,
+					"column": 19,
+					"label": "obs_source_create: .obs_source_create_internal(id, name, settings, hotkey_data, flase, LIBOBS_API_VERSION)"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs-data.h",
+			"bookmarks": [
+				{
+					"line": 382,
+					"column": 33,
+					"label": "obs_data_newref: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/callback/signal.c",
+			"bookmarks": [
+				{
+					"line": 300,
+					"column": 21,
+					"label": "signal_handler_signal: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "av/obs-studio/libobs/obs-module.c",
+			"bookmarks": [
+				{
+					"line": 715,
+					"column": 18,
+					"label": "obs_register_source_s: Function Definition"
+				}
+			]
+		}
+	]
+}
